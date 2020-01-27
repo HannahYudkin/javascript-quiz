@@ -17,13 +17,13 @@ incorrectly, 10 seconds is subtracted from the remaining time in the countdown.
 
 ## Usage
 
-![Image1](https://github.com/HannahYudkin/javascript-quiz/blob/master/02-Homework/Assets/picture1.png)
+![Image1](https://github.com/HannahYudkin/javascript-quiz/blob/master/Assets/picture1.png)
 Click the start  button and answer the specific prompts. After completion, the next question will be displayed. 
 
-![Image2](https://github.com/HannahYudkin/javascript-quiz/blob/master/02-Homework/Assets/Screen%20Shot%202020-01-26%20at%208.13.54%20PM.png)
+![Image2](https://github.com/HannahYudkin/javascript-quiz/blob/master/Assets/picture2.png)
 Enter initials after completion.
 
-![Image3](https://github.com/HannahYudkin/javascript-quiz/blob/master/02-Homework/Assets/picture3.png)
+![Image3](https://github.com/HannahYudkin/javascript-quiz/blob/master/Assets/picture3.png)
 View highscores.
 
 ## Access Here
