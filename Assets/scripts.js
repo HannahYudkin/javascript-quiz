@@ -31,7 +31,6 @@ $(document).on("click", ".btn-1", function() {
   let userChoice = $(this).text();
   let correctAnswer = myQuestions[qCounter].correctAnswer;
 
-  if (time !== 0)
     if (userChoice === correctAnswer) {
       qCounter++;
       //$(".answers").empty()
@@ -39,7 +38,8 @@ $(document).on("click", ".btn-1", function() {
       renderQuestion();
 
       if (qCounter === myQuestions.length) {
-        timer($(".timer"));
+        //timer($(".timer"));
+        clear();
         gameOver();
       }
     } else {
@@ -48,9 +48,6 @@ $(document).on("click", ".btn-1", function() {
       clearInterval(clock);
       timer($(".timer"));
     }
-  else {
-    clear();
-  }
 });
 
 function addForm() {
@@ -83,10 +80,10 @@ function addForm() {
 
 function gameOver() {
   clearInterval(clock);
-  timer($(".timer"));
+  console.log(clock)
   addForm();
   saveScore();
-  $(".timer").hide();
+  //$(".timer").hide();
 }
 
 function clear() {
@@ -103,6 +100,7 @@ function initialize() {
   time = 30;
   score = 0;
   clearInterval(clock);
+
 }
 
 function saveScore() {
@@ -151,9 +149,11 @@ function timer(display) {
 
     display.text(minutes + ":" + seconds);
 
-    if (--timer < 0) {
+    timer--;
+    console.log(timer)
+    if (timer < 0) {
       display.text("Times up!");
-      clearInterval(clock);
+      console.log(clock)
       gameOver();
     }
   }, 1000);
